@@ -5,18 +5,6 @@ import { toast } from 'react-toastify';
 import { fireDB } from '../../fireabase/FirebaseConfig';
 
 function myState(props) {
-    const [mode, setMode] = useState('dark');
-
-    const toggleMode = () => {
-        if (mode === 'light') {
-            setMode('dark');
-            document.body.style.backgroundColor = "rgb(17, 24, 39)"
-        }
-        else {
-            setMode('light');
-            document.body.style.backgroundColor = "white"
-        }
-    }
 
     const [loading, setLoading] = useState(false);
 
@@ -186,8 +174,7 @@ function myState(props) {
     const [filterPrice, setFilterPrice] = useState('')
 
     return (
-        <MyContext.Provider value={{
-            mode, toggleMode, loading, setLoading,
+        <MyContext.Provider value={{ loading, setLoading,
             products, setProducts, addProduct, product,
             edithandle, updateProduct, deleteProduct, order,
             user, searchkey, setSearchkey,filterType,setFilterType,

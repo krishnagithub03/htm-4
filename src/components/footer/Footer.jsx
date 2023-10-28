@@ -3,54 +3,40 @@ import myContext from '../../context/data/myContext'
 import { Link } from 'react-router-dom';
 
 function Footer() {
-  const context = useContext(myContext);
-  const { mode } = context;
   return (
     <div>
-      <footer className="text-gray-600 body-font bg-gray-300" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }}>
+      <footer className="text-gray-600 body-font bg-[#FDE5D4]">
         <div className="container px-5 py-24 mx-auto" >
           <div className="flex flex-wrap md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style={{ color: mode === 'dark' ? 'white' : '' }}>CATEGORIES</h2>
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Home</a>
+                  <a className="text-gray-600 hover:text-gray-800">Home</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Order</a>
+                  <a className="text-gray-600 hover:text-gray-800" >Order</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>All Products</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Cart</a>
+                  <a className="text-gray-600 hover:text-gray-800">All Products</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase" style={{ color: mode === 'dark' ? 'white' : '' }}>Customer Service</h2>
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Customer Service</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link to={'/returnpolicy'} className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Return Policy</Link>
+                  <Link to={'/returnpolicy'} className="text-gray-600 hover:text-gray-800" >Return Policy</Link>
                 </li>
                 <li>
-                  <Link to={'/about'} className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>About</Link>
+                  <Link to={'/about'} className="text-gray-600 hover:text-gray-800" >About</Link>
                 </li>
                 <li>
-                  <Link to={'/contact'} className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Contact Us</Link>
+                  <Link to={'/contact'} className="text-gray-600 hover:text-gray-800" >Contact Us</Link>
                 </li>
               </nav>
             </div>
 
-            {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style={{ color: mode === 'dark' ? 'white' : '' }}>Services</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <Link to={'/privacypolicy'} className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Privacy</Link>
-                </li>
-
-              </nav>
-            </div> */}
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <img src="https://ecommerce-sk.vercel.app/pay.png" alt="" />
             </div>
@@ -58,15 +44,15 @@ function Footer() {
 
         </div>
 
-        <div className="bg-gray-200" style={{ backgroundColor: mode === 'dark' ? 'rgb(55 57 61)' : '', color: mode === 'dark' ? 'white' : '', }}>
+        <div className="bg-gray-200" >
           <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
             <Link to={'/'} className='flex'>
               <div className="flex ">
-                <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>E-Mandi</h1>
+                <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' >E-Mandi</h1>
               </div>
             </Link>
-            <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4" style={{ color: mode === 'dark' ? 'white' : '' }}>© 2023 E-Mandi —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank" style={{ color: mode === 'dark' ? 'white' : '' }}>www.emandi.com</a>
+            <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4" >© 2023 E-Mandi —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank" >www.emandi.com</a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
               <a className="text-gray-500">

@@ -25,7 +25,10 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={
+            <div className="relative z-0 bg-transparent"><Home /></div>
+          
+          } />
           <Route path="/allproducts" element={<Allproducts />} />
           <Route path="/order" element={
             <ProtectedRoute>
