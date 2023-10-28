@@ -57,8 +57,8 @@ function ProductInfo() {
 
     return (
         <Layout>
-            <section className="text-gray-600 body-font overflow-hidden">
-                <div className="container px-5 py-10 mx-auto">
+            <section className="text-gray-600 body-font overflow-hidden pt-20 bg-[#445D48]">
+                <div className="container px-5 py-10 mx-auto bg-black">
                     {products && 
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">
                         <img
@@ -68,9 +68,9 @@ function ProductInfo() {
                         />
                         <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h2 className="text-sm title-font text-gray-500 tracking-widest">
-                                BRAND NAME
+                                Anonymous
                             </h2>
-                            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
+                            <h1 className="text-gray-100 text-3xl title-font font-black mb-1">
                                 {products.title}
                             </h1>
                             <div className="flex mb-4">
@@ -171,12 +171,12 @@ function ProductInfo() {
                                     </a>
                                 </span>
                             </div>
-                            <p className="leading-relaxed border-b-2 mb-5 pb-5">
+                            <p className="leading-relaxed border-b-2 mb-5 pb-5 w-40">
                                 {products.description}
                             </p>
 
                             <div className="flex">
-                                <span className="title-font font-medium text-2xl text-gray-900">
+                                <span className="title-font font-medium text-2xl text-grey-100">
                                 ₹{products.price}
                                 </span>
                                 <button  onClick={()=>addCart(products)} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">

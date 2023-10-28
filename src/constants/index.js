@@ -1,14 +1,14 @@
 export const navLinks = [
     {
-      id: "product",
+      id: "/allproducts",
       title: "All Products",
     },
     {
-      id: "Orders",
+      id: "/order",
       title: "Orders",
     },
     {
-      id: "Admin",
+      id: "/dashboard",
       title: "Admin",
     },
   ];

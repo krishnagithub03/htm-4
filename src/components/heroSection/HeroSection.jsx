@@ -32,10 +32,10 @@ const Hero = () => {
         </div>
 
         <div>
-        <h1 className={`${styles.heroHeadText} text-white`}>
+        <h1 className={`${styles.heroHeadText} text-[#FDE5D4]`}>
             Welcome to <span className='text-[#445D48]'>E-Mandi</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>One Stop Solution for your fresh vegetables,fruits and grains directy from Framers.<br className="sm:block hidden"/>Get Everything Fresh</p>
+          <p className={`${styles.heroSubText} mt-2 text-[#FDE5D4]`}>One Stop Solution for your fresh vegetables,fruits and grains directy from Framers.<br className="sm:block hidden"/>Get Everything Fresh</p>
         </div>
         <div>
           <img src={farmer} alt="" className=" w-[30rem] sm:h-96 h-28"/>
@@ -44,7 +44,7 @@ const Hero = () => {
       <div
       className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center"
       > 
-      <a href="/filter">
+      <a href="/allproducts">
       <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify center items-start p-2">
           <motion.dev
           animate={{
@@ -58,8 +58,8 @@ const Hero = () => {
           className="w-3 h-3 rounded-full bg-secondary mb-1"
           />
 </div>
-          </a>
-        </div>
+          </a>    
+          </div> 
     </section>
   )
 }

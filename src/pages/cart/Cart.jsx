@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useContext, useEffect, useState } from 'react'
 import myContext from '../../context/data/myContext';
 import Layout from '../../components/layout/Layout';
@@ -88,7 +89,7 @@ function Cart() {
       amount: parseInt(grandTotal * 100),
       currency: "INR",
       order_receipt: 'order_rcptid_' + name,
-      name: "E-Bharat",
+      name: "E-Mandi",
       description: "for testing purpose",
       handler: function (response) {
         console.log(response)
@@ -135,20 +136,20 @@ function Cart() {
   }
   return (
     <Layout >
-      <div className="h-screen bg-gray-100 pt-5 mb-[60%] " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
-        <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
+      <div className="h-screen pt-20 bg-[#445D48] bg-repeat-y mb-[60%] ">
+        <h1 className="mb-10 text-center text-2xl font-black">Cart Items</h1>
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0 ">
           <div className="rounded-lg md:w-2/3 ">
             {cartItems.map((item, index) => {
               const { title, price, description, imageUrl } = item;
               return (
-                <div className="justify-between mb-6 rounded-lg border  drop-shadow-xl bg-white p-6  sm:flex  sm:justify-start" style={{ backgroundColor: mode === 'dark' ? 'rgb(32 33 34)' : '', color: mode === 'dark' ? 'white' : '', }}>
+                <div className="justify-between mb-6 rounded-lg border  drop-shadow-xl bg-[#FDE5D4]  p-6  sm:flex  sm:justify-start">
                   <img src={imageUrl} alt="product-image" className="w-full rounded-lg sm:w-40" />
                   <div className="sm:ml-4 sm:flex sm:w-full sm:justify-between">
                     <div className="mt-5 sm:mt-0">
-                      <h2 className="text-lg font-bold text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>{title}</h2>
-                      <h2 className="text-sm  text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>{description}</h2>
-                      <p className="mt-1 text-xs font-semibold text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{price}</p>
+                      <h2 className="text-lg font-bold text-gray-900" >{title}</h2>
+                      <h2 className="text-sm  text-gray-900" >{description}</h2>
+                      <p className="mt-1 text-xs font-semibold text-gray-700" >₹{price}</p>
                     </div>
                     <div onClick={() => deleteCart(item)} className="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -163,20 +164,20 @@ function Cart() {
 
           </div>
 
-          <div className="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3" style={{ backgroundColor: mode === 'dark' ? 'rgb(32 33 34)' : '', color: mode === 'dark' ? 'white' : '', }}>
+          <div className="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3" >
             <div className="mb-2 flex justify-between">
-              <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>Subtotal</p>
-              <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{totalAmout}</p>
+              <p className="text-gray-700">Subtotal</p>
+              <p className="text-gray-700">₹{totalAmout}</p>
             </div>
             <div className="flex justify-between">
-              <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>Shipping</p>
-              <p className="text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{shipping}</p>
+              <p className="text-gray-700">Shipping</p>
+              <p className="text-gray-700">₹{shipping}</p>
             </div>
             <hr className="my-4" />
             <div className="flex justify-between mb-3">
-              <p className="text-lg font-bold" style={{ color: mode === 'dark' ? 'white' : '' }}>Total</p>
+              <p className="text-lg font-bold" >Total</p>
               <div className>
-                <p className="mb-1 text-lg font-bold" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{grandTotal}</p>
+                <p className="mb-1 text-lg font-bold" >₹{grandTotal}</p>
               </div>
             </div>
             {/* <Modal  /> */}

@@ -76,7 +76,7 @@ export default function Modal({ name, address, pincode, phoneNumber, setName, se
                                                         </div>
 
                                                     </form>
-                                                    <button onClick={()=>{buyNow(); closeModal()}} type="button" className="focus:outline-none w-full text-white bg-violet-600 hover:bg-violet-800  outline-0 font-medium rounded-lg text-sm px-5 py-2.5 ">Order Now</button>
+                                                    <button onClick={()=>{buyNow(); closeModal()}} type="button" className="focus:outline-none w-full text-white bg-[#445D48]   outline-0 font-medium rounded-lg text-sm px-5 py-2.5 ">Order Now</button>
 
                                                 </div>
                                             </div>

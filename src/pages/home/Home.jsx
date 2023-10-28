@@ -14,13 +14,12 @@ function Home() {
     <Layout>
       <HeroSection />
       <Filter />
-      <StyledEngineProvider injectFirst>
-    <ProductCard />
-    </StyledEngineProvider>
-      
+       <StyledEngineProvider injectFirst>
+    <ProductCard /> 
+    </StyledEngineProvider> 
       <div className="flex justify-center -mt-10 mb-4">
         <Link to={'/allproducts'}>
-          <button className=' bg-gray-300 px-5 py-2 rounded-xl'>See more</button>
+          <button className=' bg-[#FDE5D4] px-5 py-2 rounded-lg text-[#445D48]'>See more</button>
         </Link>
       </div>
       <Track />
