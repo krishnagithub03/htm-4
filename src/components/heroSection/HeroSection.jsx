@@ -40,7 +40,7 @@ const Hero = () => {
 
         <div>
         <h1 className={`${styles.heroHeadText} text-[#FDE5D4]`}>
-            Welcome to <span className='text-[#445D48]'>E-Mandi</span>
+            Welcome to <br /><span className='text-[#445D48]'>E-Mandi</span>
           </h1>
           <br />
           <p className={`${styles.heroSubText} mt-2 text-[#FDE5D4]`}>One Stop Solution for your fresh vegetables,fruits and grains directy from Framers.<br className="sm:block hidden"/>Get Everything Fresh.</p>
@@ -74,9 +74,9 @@ const Hero = () => {
       <iframe src="https://chatbot.hellotars.com/conv/c4uWJl/" className={bot ? "" : "hidden"}>
         </iframe>
         <div className="flex-col">
-      <div className="sm:w-10 h-10 bg-[#445D48] rounded-full hover:bg-white" title="Try Me!" onClick={handleBot}>
+      <div className="sm:w-30 h-10 bg-[#445D48] rounded-full hover:bg-white" onClick={handleBot}>
+      <span className=" flex justify-center items-center p-1.5 text-black">TRY ME!</span>
       </div> 
-      TRY ME!
       </div>
       </div>
     </section>
