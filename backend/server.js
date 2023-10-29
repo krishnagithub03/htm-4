@@ -44,19 +44,24 @@ app.get("/orders", async (req, res) => {
 app.post("/products", async (req, res) => {
     try {
         const {
-            name,
-            quantity,
-            prize_high,
-            prize_low
+            title,
+            price,
+            imageUrl,
+            category,
+            description,
+            time,
+            date,
         } = req.body
 
         const data = {
-            productID: uid(),
-            name,
-            quantity,
-            prize_high,
-            prize_low
-        }
+          title,
+          price,
+          imageUrl,
+          category,
+          description,
+          time,
+          date,
+        };
 
         await Product.create(data)
 
@@ -86,7 +91,7 @@ app.post("/order", async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 const connectDatabase = async () => {
   try {
