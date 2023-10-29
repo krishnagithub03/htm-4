@@ -16,8 +16,15 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { farmer } from "../../assets";
+import { useState } from "react";
 
 const Hero = () => {
+  const [bot, setBot] = useState(true);
+
+  const handleBot = () => {
+    if(bot == true) setBot(false);
+    else setBot(true);
+  };
   return (
     <section
     className='relative w-full h-screen mx-auto'
@@ -35,10 +42,11 @@ const Hero = () => {
         <h1 className={`${styles.heroHeadText} text-[#FDE5D4]`}>
             Welcome to <span className='text-[#445D48]'>E-Mandi</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-[#FDE5D4]`}>One Stop Solution for your fresh vegetables,fruits and grains directy from Framers.<br className="sm:block hidden"/>Get Everything Fresh</p>
+          <br />
+          <p className={`${styles.heroSubText} mt-2 text-[#FDE5D4]`}>One Stop Solution for your fresh vegetables,fruits and grains directy from Framers.<br className="sm:block hidden"/>Get Everything Fresh.</p>
         </div>
         <div>
-          <img src={farmer} alt="" className=" w-[30rem] sm:h-96 h-28"/>
+          <img src={farmer} alt="" className={`w-auto min-w-full sm:h-96 h-28`}/>
         </div>
       </div>
       <div
@@ -60,6 +68,17 @@ const Hero = () => {
 </div>
           </a>    
           </div> 
+          <div
+      className="absolute xs:bottom-10 bottom-32 flex-col right-0 w-96 p-7"
+      >
+      <iframe src="https://chatbot.hellotars.com/conv/c4uWJl/" className={bot ? "" : "hidden"}>
+        </iframe>
+        <div className="flex-col">
+      <div className="sm:w-10 h-10 bg-[#445D48] rounded-full hover:bg-white" title="Try Me!" onClick={handleBot}>
+      </div> 
+      TRY ME!
+      </div>
+      </div>
     </section>
   )
 }
