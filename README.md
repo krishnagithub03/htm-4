@@ -42,31 +42,31 @@ npm install
 # Start the application
 npm start
 ```
+
 # Tech Stack
 
 This project is built using a variety of technologies and services. Here are some of the key components:
 
 ## Frontend
 
-- ![React](https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg) React: A JavaScript library for building user interfaces.
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="20" height="20"> React: A JavaScript library for building user interfaces.
 
 ## Backend
 
-- ![Node.js](https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg) Node.js: A runtime environment for executing JavaScript code server-side.
-- ![Express.js](https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg) Express.js: A web application framework for Node.js.
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="20" height="20"> Node.js: A runtime environment for executing JavaScript code server-side.
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" width="20" height="20"> Express.js: A web application framework for Node.js.
 
 ## Database
 
-- ![MongoDB](https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg) MongoDB: A NoSQL database for scalable and flexible data storage.
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="20" height="20"> MongoDB: A NoSQL database for scalable and flexible data storage.
 
 ## Cloud Services
 
-- ![Amazon Web Services (AWS)](https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg) AWS: A cloud computing platform that provides a wide range of services.
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" width="20" height="20"> AWS: A cloud computing platform that provides a wide range of services.
 
 ## Decentralized Data Storage
 
-- ![Arweave](https://arweave.net/a6hR3Is10wwMmdY36RlhVkwR4Uf7iSESNJYEC5FAd8g) Arweave: A decentralized data storage platform.
-
+- <img src="https://arweave.net/a6hR3Is10wwMmdY36RlhVkwR4Uf7iSESNJYEC5FAd8g" width="20" height="20"> Arweave: A decentralized data storage platform.
 
 ## Usage
 
