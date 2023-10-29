@@ -1,3 +1,4 @@
+const { json } = require("express");
 const mongoose = require("mongoose");
 
 
@@ -15,12 +16,13 @@ const farmer = new mongoose.Schema({
 });
 
 const product = new mongoose.Schema({
-    productID: { type: String, required: true },
-    name: { type: String, required: true },
-    quantity: { type: String, required: true },
-    prize_high: { type: String, required: true },
-    prize_low: { type: String, required: true },
-    // is_finished: { type: String, required: true },
+  title: { type: String, required: true },
+  price: { type: String, required: true },
+  imageUrl: { type: String, required: true },
+  category: { type: String, required: true },
+  description: { type: String, required: true },
+  time: { type: Object, required: true },
+  date: { type: String, required: true },
 });
 
 const customer = new mongoose.Schema({

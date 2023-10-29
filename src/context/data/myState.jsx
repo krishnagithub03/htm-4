@@ -3,6 +3,7 @@ import MyContext from './myContext'
 import { Timestamp, addDoc, collection, deleteDoc, doc, getDocs, onSnapshot, orderBy, query, setDoc } from 'firebase/firestore';
 import { toast } from 'react-toastify';
 import { fireDB } from '../../fireabase/FirebaseConfig';
+import axios from "axios";
 
 function myState(props) {
 
@@ -34,13 +35,23 @@ function myState(props) {
 
         try {
             const productRef = collection(fireDB, 'products');
-            await addDoc(productRef, products)
-            toast.success("Add product successfully");
-            setTimeout(() => {
-                window.location.href = '/dashboard'
-            }, 800);
-            getProductData();
-            setLoading(false)
+            const url = "http://localhost:5000/products"
+            console.log("add")
+            await addDoc(productRef, products).then(async() => { 
+                await axios({
+                method: 'POST',
+                url,
+                data: products
+            }).then(async() => {
+                await addDoc(productRef, products);
+                toast.success("Add product successfully");
+                setTimeout(() => {
+                  window.location.href = "/dashboard";
+                }, 800);
+                getProductData();
+                setLoading(false);
+            })
+            });
         } catch (error) {
             console.log(error);
             setLoading(false)
