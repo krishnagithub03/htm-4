@@ -35,7 +35,7 @@ function myState(props) {
 
         try {
             const productRef = collection(fireDB, 'products');
-            const url = "http://localhost:5000/products"
+            const url = "http://65.2.188.221/app/products";
             console.log("add")
             await addDoc(productRef, products).then(async() => { 
                 await axios({
