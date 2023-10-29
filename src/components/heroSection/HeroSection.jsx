@@ -74,7 +74,7 @@ const Hero = () => {
       <iframe src="https://chatbot.hellotars.com/conv/c4uWJl/" className={bot ? "" : "hidden"}>
         </iframe>
         <div className="flex-col">
-      <div className="sm:w-30 h-10 bg-[#445D48] rounded-full hover:bg-white" onClick={handleBot}>
+      <div className="sm:w-30 h-10 bg-[#445D48] rounded-full hover:bg-gray-200" onClick={handleBot}>
       <span className=" flex justify-center items-center p-1.5 text-black">TRY ME!</span>
       </div> 
       </div>
