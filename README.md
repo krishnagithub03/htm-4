@@ -1,8 +1,5 @@
-# React + Vite
+# E-Mandi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portal for Farmers to sell the produce at a better rate.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Portal for Farmers to sell the produce at a better rate • Problem statement in Description o System that provides farmers an interface to sell their produce , and connect with the buyers all over India o Simple interface that works on mobile, SMS to upload produce details and respond via phone and SMS (taking care of digital divide) o Interface for anyone to buy the produce/vegetable – initially visit the place and buy or have courier service integrated to deliver the vegetables o Farmers can get a better price for their produce, no additional cost spent in marketing and delivery of goods.
